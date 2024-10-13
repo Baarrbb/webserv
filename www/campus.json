@@ -1,0 +1,77 @@
+
+[
+
+	{"name": "42 Paris", "lat": 48.896437, "lon": 2.318578, "country": "France", "continent": "Europe", "students": 9509},
+	{"name": "42 Lyon", "lat": 45.781213, "lon": 4.747624, "country": "France", "continent": "Europe", "students": 1054},
+	{"name": "42 Le Havre", "lat": 49.489591, "lon": 0.125068, "country": "France", "continent": "Europe", "students": 350},
+	{"name": "42 Mulhouse", "lat": 47.75, "lon": 7.3333, "country": "France", "continent": "Europe", "students": 361},
+	{"name": "42 Angouleme", "lat": 45.6552, "lon": 0.158847, "country": "France", "continent": "Europe", "students": 694},
+	{"name": "42 Nice", "lat": 43.683261, "lon": 7.202686, "country": "France", "continent": "Europe", "students": 759},
+	{"name": "42 Perpignan", "lat": 42.698672, "lon": 2.88872, "country": "France", "continent": "Europe", "students": 268},
+	{"name": "42 Urduliz", "lat": 43.3833, "lon": -2.95, "country": "Spain", "continent": "Europe", "students": 926},
+	{"name": "42 Barcelona", "lat": 41.66667, "lon": 2, "country": "Spain", "continent": "Europe", "students": 1796},
+	{"name": "42 Madrid", "lat": 40.19162, "lon": -3.83419, "country": "Spain", "continent": "Europe", "students": 3131},
+	{"name": "42 Malaga", "lat": 36.72016, "lon": -4.42034, "country": "Spain", "continent": "Europe", "students": 1945},
+	{"name": "42 Porto", "lat": 41.14842987060547, "lon": -8.612980842590332, "country": "Portugal", "continent": "Europe", "students": 1020},
+	{"name": "42 Lisboa", "lat": 38.7626794, "lon": -9.1038374, "country": "Portugal", "continent": "Europe", "students": 1771},
+	{"name": "42 London", "lat": 51.49280641885679, "lon": -0.1257016355818594, "country": "United Kingdom", "continent": "Europe", "students": 289},
+
+	{"name": "19 Antwerp", "lat": 51.21270938037396, "lon": 4.423046844175709, "country": "Belgium", "continent": "Europe", "students": 0},
+	{"name": "19 Brussels", "lat": 50.845544861093074, "lon": 4.3572712116485794, "country": "Belgium", "continent": "Europe", "students": 892},
+
+	{"name": "Codam", "lat":52.37449299960164 , "lon": 4.91562673553862, "country": "The Netherlands", "continent": "Europe", "students": 1100},
+	{"name": "42 Luxembourg", "lat": 49.50283247880755, "lon": 5.947387896096058, "country": "Luxembourg", "continent": "Europe", "students": 165},
+	{"name": "42 Lausanne", "lat": 46.53242643183046, "lon": 6.591983670986853, "country": "Switzerland", "continent": "Europe", "students": 901},
+
+	{"name": "42 Milano", "lat": 45.483341782137884, "lon": 9.18411568335786, "country": "Italy", "continent": "Europe", "students": 1},
+
+	{"name": "42 Firenze", "lat": 43.771014653403064, "lon": 11.242759570961168, "country": "Italy", "continent": "Europe", "students": 568},
+	{"name": "42 Roma", "lat": 41.90162701019257, "lon": 12.50333407106576, "country": "Italy", "continent": "Europe", "students": 704},
+	{"name": "42 Wolfsburg", "lat": 52.426853490361474, "lon": 10.78954865749228, "country": "Germany", "continent": "Europe", "students": 1762},
+	{"name": "42 Berlin", "lat": 52.484580240096044, "lon": 13.449834501658817, "country": "Germany", "continent": "Europe", "students": 1217},
+	{"name": "42 Heilbronn", "lat": 49.152156572255755, "lon": 9.215802942149875, "country": "Germany", "continent": "Europe", "students": 1702},
+	{"name": "42 Prague", "lat": 50.1111884082016, "lon": 14.51755129985594, "country": "Czech Republic", "continent": "Europe", "students": 787},
+	{"name": "42 Vienna", "lat": 48.248605119851064, "lon": 16.368392171042828, "country": "Austria", "continent": "Europe", "students": 848},
+	{"name": "42 Warsaw", "lat": 52.23617877472919, "lon": 20.978954901719373, "country": "Poland", "continent": "Europe", "students": 290},
+	{"name": "Hive Helsinki", "lat": 60.18085559095685, "lon": 24.95828641513779, "country": "Finland", "continent": "Europe", "students": 1099},
+
+
+	{"name": "42 Istanbul", "lat": 41.10484974487881, "lon": 28.986788406572046, "country": "Turkey", "continent": "Asia", "students": 2484},
+	{"name": "42 Kocaeli", "lat": 40.792716877863256, "lon": 29.510642023793128, "country": "Turkey", "continent": "Asia", "students": 1773},
+	{"name": "42 Yerevan", "lat": 40.19202640356571, "lon": 44.47917301655597, "country": "Armenia", "continent": "Asia", "students": 429},
+	{"name": "42 Beirut", "lat": 33.89174442181191, "lon": 35.50564610999047, "country": "Lebanon", "continent": "Asia", "students": 411},
+
+	{"name": "42 Nablus", "lat": 32.22071406034548, "lon": 35.25698224437682, "country": "Palestine", "continent": "Asia", "students": 0},
+
+	{"name": "42 Amman", "lat": 31.954126236665353, "lon": 35.88741448292938, "country": "Jordan", "continent": "Asia", "students": 343},
+	{"name": "42 Abu Dhabi", "lat": 24.520193540807753, "lon": 54.367938861311536, "country": "United Arab Emirates", "continent": "Asia", "students": 1472},
+	{"name": "42 Seoul", "lat": 37.48909743529202, "lon": 127.0655268435632, "country": "South Korea", "continent": "Asia", "students": 2641},
+	{"name": "42 Gyeongsan", "lat": 35.82509890812123, "lon": 128.74161743629648, "country": "South Korea", "continent": "Asia", "students": 236},
+	{"name": "42 Tokyo", "lat": 35.69079712946439, "lon": 139.68775603558367, "country": "Japan", "continent": "Asia", "students": 2294},
+	{"name": "42 Bangkok", "lat": 13.728465464604065, "lon": 100.77803881906898, "country": "Thailand", "continent": "Asia", "students": 743},
+	{"name": "42 Kuala Lumpur", "lat": 3.0670285051380395, "lon": 101.60635445510643, "country": "Malaysia", "continent": "Asia", "students": 419},
+
+	{"name": "42 Penang", "lat": 5.393632364873646, "lon": 100.2469412341222, "country": "Malaysia", "continent": "Asia", "students": 0},
+
+	{"name": "42 Iskandar Puteri", "lat": 1.396225266750499, "lon": 103.63325785056288, "country": "Malaysia", "continent": "Asia", "students": 1},
+
+	{"name": "42 Singapore", "lat": 1.3404525478763563, "lon": 103.96294452201857, "country": "Singapore", "continent": "Asia", "students": 419},
+
+	
+	{"name": "1337 Med", "lat": 35.65117407152648, "lon": -5.306079998156845, "country": "Morocco", "continent": "Africa", "students": 283},
+	{"name": "1337 Khouribga", "lat": 32.88236175911381, "lon": -6.8978606797586615, "country": "Morocco", "continent": "Africa", "students": 1434},
+	{"name": "1337 Ben Guerir", "lat": 32.2202050802857, "lon": -7.939811423584771, "country": "Morocco", "continent": "Africa", "students": 1200},
+	{"name": "42 Luanda", "lat": -8.924401315369671, "lon": 13.184204524662482, "country": "Angola", "continent": "Africa", "students": 523},
+	{"name": "42 Antananarivo", "lat": -18.878018496227366, "lon": 47.508251653676524, "country": "Madagascar", "continent": "Africa", "students": 460},
+
+
+	{"name": "42 Adelaide", "lat": -34.92792582136741, "lon": 138.59735333887022, "country": "Australia", "continent": "Oceania", "students": 601},
+
+
+	{"name": "42 Belo Horizonte", "lat": -19.9221557, "lon": -43.9394464, "country": "Brazil", "continent": "America", "students": 0},
+	{"name": "42 Rio", "lat": -22.89757, "lon": -43.19276, "country": "Brazil", "continent": "America", "students": 470},
+	{"name": "42 Sao Paulo", "lat": -23.5574502, "lon": -46.6893893, "country": "Brazil", "continent": "America", "students": 2043},
+
+	{"name": "42 Quebec", "lat": 46.811824, "lon": -71.225909, "country": "Canada", "continent": "America", "students": 439}
+
+]
