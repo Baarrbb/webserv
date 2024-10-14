@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 22:03:34 by marvin            #+#    #+#             */
-/*   Updated: 2024/10/13 20:07:24 by marvin           ###   ########.fr       */
+/*   Updated: 2024/10/15 01:17:51 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,14 @@ int main(void)
 		return 1;
 	}
 
+	 int opt = 1;
+	if (setsockopt(sockfd, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt)) == -1)
+	{
+		std::cerr << "ERROR: setsockopt failed: " << strerror(errno) << std::endl;
+		close(sockfd);
+		return 1;
+	}
+
 	sockaddr_in addr;
 	memset(&addr, 0, sizeof(sockaddr_in));
 	addr.sin_family = AF_INET;
@@ -58,7 +66,6 @@ int main(void)
 	}
 
 	signal(SIGINT, handle_sigint);
-
 
 	while (1)
 	{
@@ -83,7 +90,14 @@ int main(void)
 			if (valread > 0)
 			{
 				std::string bufString(buffer, 30000);
-				reqString.append(buffer, bufString.find("\n") + 1);
+				// reqString.append(buffer, bufString.find("\n") + 1);
+				reqString.append(buffer, valread);
+				std::cout << reqString << std::endl;
+				if (reqString.find_first_not_of("\r\n") == std::string::npos)
+				{
+					reqString.clear();
+					continue;
+				}
 
 				if (reqString.find("\r\n\r\n") != std::string::npos
 					|| reqString.find("\n\n") != std::string::npos)
@@ -91,11 +105,11 @@ int main(void)
 					RequestClient	req(reqString);
 					std::string		response;
 					if (req.getError() == 400)
-						response = badRequest( req.getFilename() );
+						response = badRequest( req.getTarget() );
 					else if (req.getError() == 405)
-						response = notAllowed( req.getFilename() );
+						response = notAllowed( req.getTarget() );
 					else if (req.getError() == 505)
-						response = badVersion( req.getFilename() );
+						response = badVersion( req.getTarget() );
 					else
 						response = reqResponse(req);
 					
@@ -104,6 +118,7 @@ int main(void)
 					else
 						keepAlive = false;
 
+					std::cout << response << std::endl;
 					send(newSock, response.c_str(), response.length(), 0);
 
 					if (keepAlive)
@@ -203,14 +218,14 @@ std::string	reqResponse(RequestClient &req)
 	std::string	mimeType;
 	std::string	connectionStatus = "Connection: keep-alive\r\n";
 	std::string	reqResponse = "HTTP/1.1 ";
-	std::string	filename = req.getFilename();
+	std::string	filename = req.getTarget();
 
 	std::ifstream fileStream(filename.c_str());
 	if (!fileStream.is_open())
 	{
 		req.setError(404);
-		req.setFilename("not_found/404.html");
-		filename = req.getFilename();
+		req.setTarget("not_found/404.html");
+		filename = req.getTarget();
 		fileStream.open(filename.c_str());
 	}
 

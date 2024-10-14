@@ -428,3 +428,17 @@ Serveur doit interpreter avant de renvoyer donc php avec php python avec python
 ruby avec ruby
 perl
 
+#
+
+
+Quand ajout du parsing de conf
+mettre 2 serveur dans la conf avec un meme port d'ecoute.
+
+et faire requete:
+GET / HTTP/1.1
+Host: bsuc.42.fr
+
+GET / HTTP/1.1
+Host: jap.42.fr
+
+Voir si meme page.
